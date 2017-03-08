@@ -1,10 +1,10 @@
 # mallet1files
-# 
+# section '<p2></p2>' 'inline' 
 Files and readme for workshop
 
 <H1>Welcome to the Topic Modelling - Mallet Workshop</H1>  
 
-1) In order to get started please move the Mallet ... directory from ... to the Desktop.
+1) <p2>In order to get started please move the Mallet ... directory from ... to the Desktop.</p2> 
 
 2) Next, download the found data set that we will be using for the workshop from this page (link at bottom), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
 
@@ -17,6 +17,7 @@ Files and readme for workshop
 6) Jupyter Notebooks will open a page on the browser that should look like the one you are seeing on the projected screen.
 
 7) On the right hand side of the page you will see an <b>'Upload'</b> and a <b>'New'</b> button. Select <b>'New'</b> and from the drop down menu select <b>'Terminal'</b>. This should open a terminal window with the promp:
+
 >bash-3.2$
 
 8) Now we will navigate to the Mallet folder where we unzipped the files by typing:
