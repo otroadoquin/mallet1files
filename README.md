@@ -1,7 +1,8 @@
 # mallet1files
+# 
 Files and readme for workshop
 
-Welcome to the Topic Modelling - Mallet Workshop  
+<H1>Welcome to the Topic Modelling - Mallet Workshop</H1>  
 
 <p>1) In order to get started please move the Mallet ... directory from ... to the Desktop.<p>
 
