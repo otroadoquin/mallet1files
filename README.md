@@ -53,5 +53,6 @@ The first thing you should notice is that the `train-topics` command works very 
 
 **13)** Now press enter. (inference questions)
 
-**14)** Please open the narratives_key.txt and narratives_composition.txt files in Excel. **And you're done with the easy part!** 
+**14)** Please open the narratives_key.txt and narratives_composition.txt files in Excel. 
+**And you're done with the easy part!** 
 
