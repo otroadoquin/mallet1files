@@ -16,7 +16,7 @@ Files and readme for workshop
 
 6) Jupyter Notebooks will open a page on the browser that should look like the one you are seeing on the projected screen.
 
-7) On the right hand side of the page you will see an 'Upload' and a 'New' button. Select 'New' and from the drop down menu select 'Terminal'. This should open a terminal window with the promp:
+7) On the right hand side of the page you will see an <b>'Upload'</b> and a 'New' button. Select 'New' and from the drop down menu select 'Terminal'. This should open a terminal window with the promp:
 bash-3.2$
 
 8) Now we will navigate to the Mallet folder where we unzipped the files by typing:
