@@ -37,7 +37,7 @@ This will give you a list of all the commands available within the program. We w
 There are 5 parts that we haven't discussed in this first operation. 
 `--input` tells the program where the files that you want to import are located.
 `--output` is where to send it as you can imagine but 
-It also needs the name of the file and the extension '.mallet' in order to work with the program. The name of the file doesn't matter but the `<b>.mallet</b>` is mandatory. (Think of .doc for word files or .pdf for PDF files). 
+It also needs the name of the file and the extension '.mallet' in order to work with the program. The name of the file doesn't matter but the <b>.mallet</b> is mandatory. (Think of .doc for word files or .pdf for PDF files). 
 `--keep-sequence` maintains the order of the files since remember we are importing a folder and not just individual files and 
 `--remove-stopwords` eliminates a pre-defined list of commonly repeated words from English language (this list can be modified or added to via a secondary list that you create).  
 
