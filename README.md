@@ -5,7 +5,7 @@ Files and readme for workshop
 
 1) In order to get started please move the Mallet ... directory from ... to the Desktop.
 
-2) Next, download the found data set that we will be using for the workshop from this page (link at bottom), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
+2) Next, download the found data set that we will be using for the workshop from this page (https://drive.google.com/open?id=0BxwCuF-N-3FpLWVEVkxmM0JTWVU), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
 
 3) As we have seen, Mallet is a commandline tool that requires the use of a terminal emulator. For the purposes of this workshop we will be using Jupyter notebooks because it allows us to easily save our work into a file that we can reference back to and because it's cooler than the built in commandline tools available natively on the big operating systems.
 
