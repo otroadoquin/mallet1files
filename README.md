@@ -1,4 +1,7 @@
 # mallet1files
+<!DOCTYPE html>
+<html>
+<body>
 Files and readme for workshop
 
 Welcome to the Topic Modelling - Mallet Workshop 
