@@ -24,12 +24,12 @@ bash-3.2$ cd ...
 
 9) We can access the Mallet application only from this folder and we do so by invoking the program via 'bin/mallet':
 
-```bash-3.2$ bin/mallet -help
+>bash-3.2$ bin/mallet -help
 This will give you a list of all the commands available within the program. We will be working with two in particular:
 'import-dir' and 'train-topics'. The first will import all files within a directory or folder that we tell it to and the second will generate the groups of words that make up the topic. There are additional options and syntax to these commands but it's important to first understand that these two commands work very similar to an 'Open' and 'Process'  options similar to a word processor in which you would click as needed. The difference here is that you are behind the scenes telling the program what to do instead of simply clicking the preconfigured buttons.
 
 10) To get started with the actual Mallet topic modelling the first thing that we need to do is import the data into Mallet and in a format that it can understand. Therefore we would first write (we recommend copy and pasting the directory where the txt file are to avoid errors from typing it out, both are supported):
-bash-3.2$ bin/mallet import-dir --input ... --output narrative.mallet --keep-sequence --remove-stopwords
+>bash-3.2$ bin/mallet import-dir --input ... --output narrative.mallet --keep-sequence --remove-stopwords
 
 There are 5 parts that we haven't discussed in this first operation. '--input' tells the program where the files that you want to import are located. '--output' is where to send it as you can imagine but it also needs the name of the file and the extension '.mallet' in order to work with the program. The name of the file doesn't matter but the '.mallet' is mandatory. (Think of .doc for word files or .pdf for PDF files). '--keep-sequence' maintains the order of the files since remember we are importing a folder and not just individual files and '--remove-stopwords' eliminates a pre-defined list of commonly repeated words from English language (this list can be modified or added to via a secondary list that you create).  
 
