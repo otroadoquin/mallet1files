@@ -24,7 +24,7 @@ bash-3.2$ cd ...
 
 9) We can access the Mallet application only from this folder and we do so by invoking the program via 'bin/mallet':
 
-bash-3.2$ bin/mallet -help
+```bash-3.2$ bin/mallet -help
 This will give you a list of all the commands available within the program. We will be working with two in particular:
 'import-dir' and 'train-topics'. The first will import all files within a directory or folder that we tell it to and the second will generate the groups of words that make up the topic. There are additional options and syntax to these commands but it's important to first understand that these two commands work very similar to an 'Open' and 'Process'  options similar to a word processor in which you would click as needed. The difference here is that you are behind the scenes telling the program what to do instead of simply clicking the preconfigured buttons.
 
