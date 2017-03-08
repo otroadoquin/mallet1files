@@ -37,5 +37,5 @@ There are 5 parts that we haven't discussed in this first operation. '--input' t
 bash-3.2$ ls
 
 12) With the texts imported and converted into a format that Mallet can work with we can now ask it to train the topics or the list of word groups that it selects as related according to a topic. 
-bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt<p> 
+bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt <p> 
 
