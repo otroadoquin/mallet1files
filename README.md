@@ -3,8 +3,7 @@ Files and readme for workshop
 
 <b> Welcome to the Topic Modelling - Mallet Workshop <b> 
 
-<p> 
-1) In order to get started please move the Mallet ... directory from ... to the Desktop.
+<p> 1) In order to get started please move the Mallet ... directory from ... to the Desktop.
 
 2) Next, download the found data set that we will be using for the workshop from this page (link at bottom), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
 
