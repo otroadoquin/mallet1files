@@ -35,6 +35,12 @@ There are 5 parts that we haven't discussed in this first operation. '--input' t
 11) The program runs this operation rather quickly and you will now if it's finished when you see the command line promt again. You can check if the file was created by typing the following and looking for the file that you named 'narrative.mallet':
 bash-3.2$ ls
 
-12) With the texts imported and converted into a format that Mallet can work with we can now ask it to train the topics or the list of word groups that it selects as related according to a topic. 
-bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt <p> 
+12) With the texts imported and converted into a format that Mallet can work with, we can now ask it to train the topics or the list of word groups that it selects as related according to a topic. Enter the code below and wait before pressing enter. 
+bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt
+
+The first thing you should notice is that the 'train-topics' command works very similar to the 'import-dir', (i.e. we have to tell mallet that a file goes in '--input' and then which file by telling it where it is. The two following options are not as straightforward. '--num-topics #' is the total amount of topics that will be generated per file. The '--optimize-interval' allows us to set the amount of time that a particular algorithm will run in order to calculate the weight of a topic within a file and as a whole. The last three are different versions of output: '--output-state ...gz' is a complete list of all words and is useful for debugging, '--output-topic-keys ...txt' is a list of all topics with their weight, and '--output-doc-topics ...txt' is a list of the weight and topic key number (corresponding to the previous document) by file. All three are easier to view within a specific program which we will get into after.  
+
+13) Now press enter. (inference questions)
+
+14) Please open the narratives_key.txt and narratives_composition.txt files in Excel. And you're done with the easy part! <p> 
 
