@@ -3,7 +3,7 @@ Files and readme for workshop
 
 <H1>Welcome to the Topic Modelling - Mallet Workshop</H1>  
 
-[] 1) In order to get started please move the Mallet ... directory from ... to the Desktop.
+1) In order to get started please move the Mallet ... directory from ... to the Desktop.
 
 2) Next, download the found data set that we will be using for the workshop from this page (https://drive.google.com/open?id=0BxwCuF-N-3FpLWVEVkxmM0JTWVU), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
 
@@ -34,9 +34,14 @@ This will give you a list of all the commands available within the program. We w
 
 `bash-3.2$ bin/mallet import-dir --input ... --output narrative.mallet --keep-sequence --remove-stopwords`
 
-There are 5 parts that we haven't discussed in this first operation. '--input' tells the program where the files that you want to import are located. '--output' is where to send it as you can imagine but it also needs the name of the file and the extension '.mallet' in order to work with the program. The name of the file doesn't matter but the '.mallet' is mandatory. (Think of .doc for word files or .pdf for PDF files). '--keep-sequence' maintains the order of the files since remember we are importing a folder and not just individual files and '--remove-stopwords' eliminates a pre-defined list of commonly repeated words from English language (this list can be modified or added to via a secondary list that you create).  
+There are 5 parts that we haven't discussed in this first operation. 
+`--input` tells the program where the files that you want to import are located.
+`--output` is where to send it as you can imagine but 
+It also needs the name of the file and the extension '.mallet' in order to work with the program. The name of the file doesn't matter but the `<b>.mallet</b>` is mandatory. (Think of .doc for word files or .pdf for PDF files). 
+`--keep-sequence` maintains the order of the files since remember we are importing a folder and not just individual files and 
+`--remove-stopwords` eliminates a pre-defined list of commonly repeated words from English language (this list can be modified or added to via a secondary list that you create).  
 
-11) The program runs this operation rather quickly and you will now if it's finished when you see the command line promt again. You can check if the file was created by typing the following and looking for the file that you named 'narrative.mallet':
+11) The program runs this operation rather quickly and you will now if it's finished when you see the command line promt again. You can check if the file was created by typing the following and looking for the file that you named >narrative.mallet:
 
 `bash-3.2$ ls`
 
@@ -44,9 +49,9 @@ There are 5 parts that we haven't discussed in this first operation. '--input' t
 
 `bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt`
 
-The first thing you should notice is that the 'train-topics' command works very similar to the 'import-dir', (i.e. we have to tell mallet that a file goes in '--input' and then which file by telling it where it is. The two following options are not as straightforward. '--num-topics #' is the total amount of topics that will be generated per file. The '--optimize-interval' allows us to set the amount of time that a particular algorithm will run in order to calculate the weight of a topic within a file and as a whole. The last three are different versions of output: '--output-state ...gz' is a complete list of all words and is useful for debugging, '--output-topic-keys ...txt' is a list of all topics with their weight, and '--output-doc-topics ...txt' is a list of the weight and topic key number (corresponding to the previous document) by file. All three are easier to view within a specific program which we will get into after.  
+The first thing you should notice is that the `train-topics` command works very similar to the `import-dir`, (i.e. we have to tell mallet that a file goes in `--input` and then which file by telling it where it is. The two following options are not as straightforward. `--num-topics #` is the total amount of topics that will be generated per file. The `--optimize-interval` allows us to set the amount of time that a particular algorithm will run in order to calculate the weight of a topic within a file and as a whole. The last three are different versions of output: `--output-state ...gz` is a complete list of all words and is useful for debugging, `--output-topic-keys ...txt` is a list of all topics with their weight, and `--output-doc-topics ...txt` is a list of the weight and topic key number (corresponding to the previous document) by file. All three are easier to view within a specific program which we will get into after.  
 
 13) Now press enter. (inference questions)
 
-14) Please open the narratives_key.txt and narratives_composition.txt files in Excel. And you're done with the easy part! <p> 
+14) Please open the narratives_key.txt and narratives_composition.txt files in Excel. And you're done with the easy part! 
 
