@@ -4,11 +4,11 @@ Files and readme for workshop
 
 <H1>Welcome to the Topic Modelling - Mallet Workshop</H1>  
 
-<p>1) In order to get started please move the Mallet ... directory from ... to the Desktop.<p>
+1) In order to get started please move the Mallet ... directory from ... to the Desktop.
 
-<p>2) Next, download the found data set that we will be using for the workshop from this page (link at bottom), drag and drop into the Mallet directory on the Desktop and unzip directly into it.<p>
+2) Next, download the found data set that we will be using for the workshop from this page (link at bottom), drag and drop into the Mallet directory on the Desktop and unzip directly into it.
 
-<p>3) As we have seen, Mallet is a commandline tool that requires the use of a terminal emulator. For the purposes of this workshop we will be using Jupyter notebooks because it allows us to easily save our work into a file that we can reference back to and because it's cooler than the built in commandline tools available natively on the big operating systems.<p>
+3) As we have seen, Mallet is a commandline tool that requires the use of a terminal emulator. For the purposes of this workshop we will be using Jupyter notebooks because it allows us to easily save our work into a file that we can reference back to and because it's cooler than the built in commandline tools available natively on the big operating systems.
 
 4) Jupyter Notebooks is already installed on the computers, so in order to access it simply open the Terminal application on your computer by selecting the Finder (this will open your a dialog box), select Applications from the right hand menu, scrolling down until you reach the Utilities folder, within this folder you'll find the Terminal application.
 
@@ -42,7 +42,7 @@ There are 5 parts that we haven't discussed in this first operation. '--input' t
 
 12) With the texts imported and converted into a format that Mallet can work with, we can now ask it to train the topics or the list of word groups that it selects as related according to a topic. Enter the code below and wait before pressing enter. 
 
-<p>>bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt</p>
+>bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt
 
 The first thing you should notice is that the 'train-topics' command works very similar to the 'import-dir', (i.e. we have to tell mallet that a file goes in '--input' and then which file by telling it where it is. The two following options are not as straightforward. '--num-topics #' is the total amount of topics that will be generated per file. The '--optimize-interval' allows us to set the amount of time that a particular algorithm will run in order to calculate the weight of a topic within a file and as a whole. The last three are different versions of output: '--output-state ...gz' is a complete list of all words and is useful for debugging, '--output-topic-keys ...txt' is a list of all topics with their weight, and '--output-doc-topics ...txt' is a list of the weight and topic key number (corresponding to the previous document) by file. All three are easier to view within a specific program which we will get into after.  
 
