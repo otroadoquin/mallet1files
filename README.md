@@ -3,7 +3,7 @@ Files and readme for workshop
 
 <H1>Welcome to the Topic Modelling - Mallet Workshop</H1>  
 
-**1)** In order to get started please move the Mallet ... directory from ... to the Desktop by opening the Terminal application on your computer by selecting the Finder (this will open your a dialog box), select Applications from the right hand menu, scrolling down until you reach the Utilities folder, within this folder you'll find the Terminal application. As we have seen, Mallet is a commandline tool that requires the use of a terminal emulator. For the purposes of this workshop we will be using Jupyter notebooks because it allows us to easily save our work into a file that we can reference back to and because it's cooler than the built in commandline tools available natively on the big operating systems.
+**1)** In order to get started please open the Terminal application on your computer by selecting the Finder (this will open a dialog box), select Applications from the right hand menu, scrolling down until you reach the Utilities folder, within this folder you'll find the Terminal application. As we have seen, Mallet is a commandline tool that requires the use of a terminal emulator. For the purposes of this workshop we will be using Jupyter notebooks because it allows us to easily save our work into a file that we can reference back to and because it's cooler than the built in commandline tools available natively on the big operating systems.
 
 **2)** Jupyter Notebooks is already installed on the computers, so in order to access it simply open the Terminal application on your computer by selecting the Finder (this will open your a dialog box), select Applications from the right hand menu, scrolling down until you reach the Utilities folder, within this folder you'll find the Terminal application.
 
@@ -15,16 +15,16 @@ Files and readme for workshop
 
 `bash-3.2$`
 
-**6)** Now we will navigate to the Mallet folder and copy them to your Desktop in order to have everything in one place:
+**6)** Now we will copy the Mallet directory to your Desktop in order to have everything in one place:
 
 **Only what goes after bash-3.2$**
-`bash-3.2$ cp -rf /Users/Shared/mallet-2.0.8 ... /Users/youreid/Desktop` 
+`bash-3.2$ cp -rf /Users/Shared/mallet-2.0.8RC3 /Users/youreid/Desktop` 
 
 You should now have the Mallet program directory on your Desktop. 
 
 **7)** Next, download the found data set that we will be using for the workshop from this page (https://drive.google.com/open?id=0BxwCuF-N-3FpLWVEVkxmM0JTWVU), drag and drop into the Mallet directory on the Desktop and unzip directly into it. Then, type the following to move into the Mallet directory:
 
-`bash-3.2$ cd /Users/youreid/Desktop/mallet-2.0.8...`
+`bash-3.2$ cd /Users/youreid/Desktop/mallet-2.0.8RC3`
 
 
 **8)** We can access the Mallet application only from its folder and we do so by invoking the program via 'bin/mallet'. For example, in the Jupyter notebook you have open type: **Only what goes after bash-3.2$**
@@ -36,7 +36,7 @@ This will give you a list of all the commands available within the program. We w
 
 **9)** To get started with the actual Mallet topic modelling the first thing that we need to do is import the data into Mallet and in a format that it can understand. Therefore we would first write:
 
-`bash-3.2$ bin/mallet import-dir --input /Users/youreid/Desktop/mallet-2.0.8.../texts --output narrative.mallet --keep-sequence --remove-stopwords`
+`bash-3.2$ bin/mallet import-dir --input /Users/youreid/Desktop/mallet-2.0.8RC3/texts --output narrative.mallet --keep-sequence --remove-stopwords`
 
 There are 5 parts that we haven't discussed in this first operation. 
 `--input` tells the program where the files that you want to import are located.
@@ -51,7 +51,7 @@ It also needs the name of the file and the extension '.mallet' in order to work 
 
 **11)** With the texts imported and converted into a format that Mallet can work with, we can now ask it to train the topics or the list of word groups that it selects as related according to a topic. Enter the code below and wait before pressing enter. 
 
-`bash-3.2$ bin/mallet train-topics --input ...narratives.mallet --num-topics 200 --optimize-interval 10 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt`
+`bash-3.2$ bin/mallet train-topics --input narratives.mallet --num-topics 200 --optimize-interval 10 --output-state topic-state.gz --output-topic-keys narratives_keys.txt --output-doc-topics narratives_compostion.txt`
 
 The first thing you should notice is that the `train-topics` command works very similar to the `import-dir`, (i.e. we have to tell mallet that a file goes in `--input` and then which file by telling it where it is. The two following options are not as straightforward. `--num-topics #` is the total amount of topics that will be generated per file. The `--optimize-interval` allows us to set the amount of time that a particular algorithm will run in order to calculate the weight of a topic within a file and as a whole. The last three are different versions of output: `--output-state ...gz` is a complete list of all words and is useful for debugging, `--output-topic-keys ...txt` is a list of all topics with their weight, and `--output-doc-topics ...txt` is a list of the weight and topic key number (corresponding to the previous document) by file. All three are easier to view within a specific program which we will get into after.  
 
