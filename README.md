@@ -22,7 +22,7 @@ Files and readme for workshop
 
 You should now have the Mallet program directory on your Desktop. 
 
-**7)** Next, download the found data set that we will be using for the workshop from this page (https://drive.google.com/open?id=0BxwCuF-N-3FpLWVEVkxmM0JTWVU), drag and drop into the Mallet directory on the Desktop and unzip directly into it. Then, type the following to move into the Mallet directory:
+**7)** Next, download the found data set that we will be using for the workshop from this page and linked above as ***text.zip*** drag and drop into the Mallet directory on the Desktop and unzip directly into it. Then, type the following to move into the Mallet directory:
 
 `bash-3.2$ cd /Users/youreid/Desktop/mallet-2.0.8RC3`
 
