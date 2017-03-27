@@ -36,7 +36,7 @@ This will give you a list of all the commands available within the program. We w
 
 **9)** To get started with the actual Mallet topic modelling the first thing that we need to do is import the data into Mallet and in a format that it can understand. Therefore we would first write:
 
-`bash-3.2$ bin/mallet import-dir --input /Users/youreid/Desktop/mallet-2.0.8RC3/texts --output narrative.mallet --keep-sequence --remove-stopwords`
+`bash-3.2$ bin/mallet import-dir --input /Users/youreid/Desktop/mallet-2.0.8RC3/texts --output narratives.mallet --keep-sequence --remove-stopwords`
 
 There are 5 parts that we haven't discussed in this first operation. 
 `--input` tells the program where the files that you want to import are located.
